@@ -17,7 +17,7 @@ before_install:
   - govendor sync
 after_success:
   - make ci
-  - ghr --username prudhvitella --token $GITHUB_TOKEN --delete --prerelease --debug pre-release dist/
+  - ghr --username surcouf --token $GITHUB_TOKEN --delete --prerelease --debug pre-release dist/
 branches:
   only:
     - master
